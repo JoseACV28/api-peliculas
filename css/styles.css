@@ -1,0 +1,142 @@
+body {
+    font-family: 'roboto', sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+select {
+    justify-content: center;
+    display:flex;
+    padding: 5px 10px;
+    height:42px;
+    margin:10px auto;
+    min-width: 40%;
+    height: 34px;
+
+}
+
+#search-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#search-form label {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+#search-form input, #search-form select, #search-form button {
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    padding: 2px 5px;
+    height:42px;
+    margin:10px auto;
+    min-width: 40%;
+    height: 34px;
+}
+
+
+#search-form button {
+    text-align: center;
+    background-color: #1e88e5;
+    color: white;
+    cursor: pointer;
+}
+
+#search-form button:hover {
+    background-color: #0d47a1;
+}
+
+#resultDiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#resultDiv > div {
+    flex-basis: calc(30% - 20px);
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 5px;
+    
+}
+
+/* Additional styles and responsiveness can be added below */
+
+.result-item {
+    flex-basis: calc(33.333% - 20px); /* Adjust the width as needed for your layout */
+    background-color: #262626; /* Slightly lighter than the body for contrast */
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.movie-image {
+    background-color: #1e1e1e; /* Placeholder color for the image */
+    height: 150px; /* Set a fixed height for the image placeholder */
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-image: url('../images/movie.jpg');
+    background-size: cover; /* This will make sure the image covers the whole div */
+    background-position: center; /* This will center the image in the div */
+}
+
+.movie-title {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem; /* Adjust the size as needed */
+}
+
+.streaming-services {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.streaming-services li {
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333333; /* Darker background for each service */
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.9rem; /* Smaller font size for the services */
+}
+
+/* Color normal para el enlace no visitado */
+a:link {
+    color: cyan;
+  }
+  
+  /* Color para el enlace visitado */
+  a:visited {
+    color: cyan;
+  }
+  
+  /* Color al pasar el mouse sobre el enlace */
+  a:hover {
+    color: purple;
+  }
+  
+  /* Color cuando el enlace está activo (haciendo clic) */
+  a:active {
+    color: pink;
+  }
